@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Ajustáveis</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Altera o tamanho da janela do navegador para ver o que acontece...</p>
+
+    <picture>
+        <source media="(max-width: 640px)" srcset="img_exercicio/cachorro_cururu_p.jpg">
+        <source media="(max-width: 1080px)" srcset="img_exercicio/cachorro_cururu_m.jpg">
+        <img src="img_exercicio/cachorro_cururu_g.jpg" alt="imagem flexível">
+    </picture>
+</body>
+</html>

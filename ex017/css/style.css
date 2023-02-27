@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+
+#flex-conteiner{
+    display: flex; /* flex-direction: row; (usar com o flex)    */
+    flex-wrap: wrap;/* serve para quebrar a linha quando diminui a janela do navegador ou quando muda pro cell */
+    justify-content: space-around; /* centraliza ou muda as posições das caixas */
+    align-items: center; /* muda as posições dos itens, tem varias opções */
+    background-color: rgba(0, 0, 0, 0.226);
+    height: 400px;
+}
+#flex-conteiner > div{
+    width: 20px;/* largura */
+    height:20px;/* altura */
+    background-color: blue;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    line-height: 20px;/* altura da linha */
+    border-radius: 50%;/* deixa redondo ou mais arredondado nas pontas depende da porcentagem/px escolhida */
+}

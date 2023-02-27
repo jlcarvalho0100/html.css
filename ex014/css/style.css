@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@font-face{
+    font-family: fonte1;
+    src: url(../fontes/Barbarian.ttf);
+}
+
+body{
+    margin: 0;/* importante resetar as bordas no começo para n ter problemas futuros */
+    padding: 0;
+}
+
+h1{
+    border: 5px solid black;
+    
+    width: 80%; /* muda a largura da tela */
+    /* 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px; */
+    text-align: center;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    margin: 10%;
+    
+    outline: 3px solid rgb(136, 9, 9); /* coloca cor em volta da borda */
+    
+}
+a{
+    border: 1px solid black;
+    border-radius: 5px; /* serve para arredondar a borda */
+    background-color: black;
+    box-shadow: 5px 5px 10px rgb(136, 9, 9); /* coloca sombra em volta */
+    color: white;
+    text-decoration: none;/* tira a linha debaixo do link */
+    padding: 5px 20px;/* coloca espaçamento */
+    font-size: large;
+    text-transform: uppercase;/* deixa todas as letras em maiusculo */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10px; /* afasta os link uns dos outros */
+    
+}
+a:hover{/* troca a cor quando passa o mouse em cima */
+    background-color: rgb(136, 9, 9);
+    color: black;
+    box-shadow: 5px 5px 10px black;
+}
+div{
+    text-align: center;
+    width: 80%;
+    margin: 10%;
+    
+}
+p{
+    text-align: center;
+    font-family: fonte1;
+}
+p > span{
+    display: none;
+}
+p:hover > span{
+    display: inline-block;
+    border: 5px solid black;
+    box-shadow: 5px 5px 10px  rgb(136, 9, 9);
+}

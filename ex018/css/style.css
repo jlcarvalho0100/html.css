@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+#botao-menu{
+    display: none;
+}
+label[for='botao-menu']{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.342);
+    font-size: 30px;
+    color: red;
+    padding: 5px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+#menu{
+    display: flex;
+    margin-top: 10px;
+}
+a{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.342) ;
+    color: red;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-top: 5px;
+}
+a:hover{
+    background-color: rgba(255, 0, 0, 0.658);
+    color:  rgba(0, 0, 0, 0.432);
+    outline: 3px solid  rgba(0, 0, 0, 0.432);
+}
+@media (max-width: 535px){ /* pra arrumar a janela quando ta pequena */
+    #menu{
+        margin-left: -200%;
+        flex-direction: column;
+    }
+    label[for='botao-menu']{
+        display: block;
+    }
+    #botao-menu:checked ~ #menu{ /* o ~ serve para selecionar o irmao mais próximo */
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body{
+    margin: 100px;
+}
+h1{ 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    font-size: 45pt;
+    background-color: rgb(57, 30, 82);
+    border: 2px solid black;
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    background-color: rgb(135, 99, 168);
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid black;
+}
+span{
+    color: red;
+}
+a{
+    color: rgb(201, 9, 153);
+    text-decoration: none; /*ele tira a linha de baixo*/
+    background-color: black;
+}
+a:hover{ /* quando coloco a seta do mouse em cima*/
+    background-color: blueviolet;
+}
+a:visited{
+    color: aqua;
+}

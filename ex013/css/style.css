@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* usa #pra id e . para class */
+
+#titulo1{
+    color: blue;
+}
+.sub1{
+    color: aqua;
+}
+
+#titulo2{
+    color: red;
+}
+.sub2{
+    color: orange;
+}
+.span1{
+    color: rgb(186, 226, 43);
+}
+.span2{
+    color: blueviolet;
+}

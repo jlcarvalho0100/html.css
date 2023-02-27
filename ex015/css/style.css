@@ -1,0 +1,164 @@
+@charset "UTU-8";
+
+
+
+:root{
+    --cor1:#0455BF;
+    --cor2:#033E8C;
+    --cor3:#BBE2F2;
+    --cor4:#40D93B;
+    --cor5:#F23005;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+#faixaHeader{
+    box-shadow: 5px 5px 10px var(--cor2);
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+}
+#caixaLogo{
+    display: flex;  
+}
+#botao-menu{
+    display: none;
+    
+}
+label[for='botao-menu']{
+    display: flex;
+    cursor: pointer;
+    background-color: var(--cor2);
+    font-size: 30px;
+    color: var(--cor3);
+    padding: 5px;
+    display: none; 
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-left: 80%;
+    margin-top: 10px;
+    position: fixed;
+    
+
+}
+
+header{
+    display: flex;
+    background-color: white;
+    max-width: 1150px;
+    width: 80%;
+    height: 70px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed ;
+}
+header  img{
+    margin-right: 10px;
+}
+header  p{
+    text-transform: uppercase;
+    min-width: 300px;
+    display: flex;
+    align-items: center; /* centraliza o conteudo na vertical, para isso é necessario o display flex */
+}
+header > nav{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+header > nav > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 20px;
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    
+    color: var(--cor2);
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+}
+header > nav > a:hover{
+    color: var(--cor3);
+} 
+#img1{
+    background-image: url("../imagens/software-developer-g593ba004f_1920.jpg");
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    margin-top: 50px;
+    margin: auto;
+    max-width: 1150PX;
+    
+}
+main{
+    padding: 15px 20%;
+    text-align: justify;
+}
+li{
+    margin-bottom: 16px;
+}
+p{    
+    text-align: justify;
+    font-size: 20px;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 24px;
+}
+footer{
+    display: flex;
+    max-width: 1150PX;
+    width: 100%;
+    background-color: var(--cor2);
+    height: 150px;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+footer > div{
+    width: 32%;/* largura */
+    height:100%;/* altura */
+    
+    
+}
+footer p{
+    text-align: center;
+    
+}
+@media(max-width:1120px){
+    header > nav{
+        margin-left: -300%;
+        flex-direction: column;
+    }
+    label[for='botao-menu']{
+        display: block;
+        
+    }
+    #botao-menu:checked ~ #menu{ /* o ~ serve para selecionar o irmao mais próximo */
+        display: flex;
+        position: absolute;
+        margin-left: 75%;
+        margin-top: 10%;
+        margin-right: 50px;   
+    }
+    a{
+        background-color: var(--cor3);
+        color: var(--cor3);
+    }
+}
+
